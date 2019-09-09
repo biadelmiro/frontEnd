@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../Css/stylee.css">
+        <title>Formulário Contato</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="centro">
+            <h1>Insira seus dados</h1>
+            <h3>Aguarde e espere o nosso contato!</h3>
+            <form method="POST"> <!--Metodo post esconde os dados do cliente e o GET mostra dados na URL // action serve para add os dados em algum local-->
+                <div class="form">
+                <label>Usuário: </label><input type="text" name="user" class="space" placeholder="Insira o nome de usuário"/><br/>
+
+                <label>Senha: </label><input type="password" name="password" class="space" placeholder="Insira uma senha"/><br/>
+
+               <label>Estado Civil: </label><select name="estado" class="space" id="num3">
+                    <option value="1">Solteiro(a)</option>
+                    <option value="2">Casado(a)</option>
+                    <option value="3">Divorciado(a)</option>
+                </select><br/>
+
+                <label>Sexo: </label><div class="sexo">
+                <input type="radio" name="sexo" value="feminino" class="space1"checked>F
+                <input type="radio" name="sexo" value="masculino" class="space1">M<br/></div>
+            
+                <label>Data de nascimento:</label><input type="date" class="space"><br/>
+                
+                <label>Telefone: </label><input type="text" class="space" id="num" placeholder="(DDD)" /> <input type="text" placeholder="Número de telefone" id="num2"/><br/>
+
+                <label>Mensagem:
+                <textarea name="texto" cols="31" rows="6"  placeholder="Escreva uma mensagem"></textarea></label><br/><br/>
+                <input type="checkbox" name="termos" class="link">Li e estou de acordo com os <a href="#">termos de uso!</a><br/><BR/>
+                <input type="reset" value="Resetar" class="botao"/>
+                <input type="submit" value="Enviar" class="botao"/>
+            </div>
+            </form>
+            
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+body{
+    font-family:Helvetica, sans-serif;
+    margin: 0;
+    background-image: url('../img/img4.jpg');
+    background-size: 100%;
+    color: #ffffff;
+    text-shadow: px 6px 10px rgba(233, 61, 30, 0.637);
+}
+.centro{
+    background-color: rgba(241, 86, 58, 0.315);
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+}
+h1{
+    padding: 20px;
+}
+h3, table, .baixo{
+    margin-left: 20px;
+}
+a{
+    color: white;
+    outline-style: none;
+}
+a:hover{
+    color: rgb(248, 99, 72);
+}
+.space{
+    width: 300px;
+    border-radius: 10px;
+}
+.sexo1{
+    width: 310px;
+    border-radius: 10px;
+}
+#num{
+    width: 60px;
+    border-radius: 10px;
+}
+#num2{
+    width: 230px;
+    border-radius: 10px;
+}
+textarea{
+    width: 300px;
+    border-radius: 10px;
+}
+.botao{
+    color: white;
+    background-color: rgba(241, 86, 58, 0.315);
+    margin: 0 0 10px 0;
+    position: relative;
+    top: 10px;
+    left: 290px;
+    border-radius: 10px;
+    padding: 4px;
+    border-bottom: 1px double #ff8787;
+    border-top: 1px double #ff8787;
+    border-left:1px double #e49494;
+    border-right:1px double #e49494;
+}
+.botao:hover{
+    color: black;
+    background-color: #ffffff;
+}

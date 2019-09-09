@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Oi Teste</title>
+        <style>
+        body{
+            background-color: coral;
+        }
+        .meio{
+            width: 50px;
+            background-color: aqua;
+            height: 50px;
+            margin-left: 650px;
+            margin-top: 50px;
+            border-radius: 50%;
+        }
+        .meio:hover{
+            animation-name: um;
+            animation-duration: 2s;
+        }
+        @keyframes um{
+            0%{
+                background-color: aqua;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+        .linha:hover{
+            animation-name: um;
+            animation-duration: 2s;
+        }
+        @keyframes linha{
+            0%{
+                background-color: aqua;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+        .linha{
+            background-color: aqua;
+            width: 50px;
+            height: 15px;
+            border-radius: 50%;
+            margin-left: 610px;
+            margin-top: 20px;
+        }
+       #a{
+           margin-top: 50px;
+       }
+        </style>
+    </head>
+    <body>
+        <div class="meio"></div>
+        <div class="linha" id="a"></div>
+        <div class="linha" id="b"></div>
+        <div class="linha" id="c"></div>
+        <div class="linha" id="d"></div>
+    </body>
+</html>

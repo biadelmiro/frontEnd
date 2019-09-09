@@ -1,0 +1,43 @@
+body{
+    background-size: 100%;
+    background-color: rgb(255, 167, 248);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.all{
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    box-shadow: 5px 5px 10px;
+}
+
+.box{
+    display: flex;
+    background-color: rgb(255, 167, 248);
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.box > p{
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.all:hover{
+    background-color: aquamarine;
+    width: 400px;
+    height: 400px;
+}
+
+.box:hover{
+    background-color:rgb(255, 206, 251);
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+
+}

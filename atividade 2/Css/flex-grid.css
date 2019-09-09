@@ -1,0 +1,148 @@
+body, ul, li, p {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin-bottom: 100px;
+}
+a{
+    text-decoration: none; /*linha abaixo do link*/
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+img{
+    display: block;
+    max-width: 100%; /* Fazer com que todas as img fiquem responsivas, aumentem no máximo 100% do tamanho do conteiner*/
+}
+
+.header{
+    background-color: #1d1e20; 
+    display: flex; /* Ajusta as tags ao lado*/
+    flex-wrap: wrap; /*Ajusta o menu abaixo do "Logo" quando o site precisar ser responsivo*/
+    justify-content: space-between; /* Ajusta os espaços entre os "Objetos" que estão dentro do header ou seja a tag A e a tag ul/li */
+    padding: 20px; /*Padding é a distancia de dentro pra fora*/
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 10px;
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+/* CSS FLEX BOX */
+
+.flex{
+    display: flex;
+    flex-wrap: wrap; /*significa que ele pode se quebrar ao expandir ou diminuir a pag*/
+    max-width: 800px; /* significa que o conteiner que está segurando as imagens não ficará de "Ponta-a-ponta do site"*/
+    margin: 0 auto; /*alinha ao centro com as mesmas distancias aos lados*/
+}
+
+.flex > div{ /* O sinal de mais que para a div siginifica que naquela div onde o .flex está deve ser alterada*/
+    flex: 1 1 200px ;/*expandir*//* ficar menor*//* base de 200px*/
+    margin: 10px; /*margem apenas dentro da DIV*/
+}
+
+/* CSS GRID 8*/
+
+.grid1{
+    display: grid; /*designar que os proximos objetos serão tipo "grid*/
+    grid-template-columns: repeat(3, 1fr); /* "100% dividido em tres partes" grid funciona como tabela, Fr significa unidade fracional, cada fr é uma coluna*/
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    grid-gap: 20px; /*dá um espaçamento entre os itens sem precissar por padding ou margin*/
+}
+.grid1 > div:nth-child(n + 4){ /* NTH-CHILD chama divs específicas sem precisar por class, por exemplo (1) vai ser a primeira, (n+4) a partir da quarta adiciona estilização*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; /*distancia entre a frase e a foto*/
+    align-items: center;
+}
+
+.grid1 > div.anuncio{
+    grid-column: 1;
+    grid-row: 2/5; /*conta quantas colunas o ítem vai permanecer, ou seja, no exemplo existem 5 linhas, e euquero que o anuncio fique desde a segunda até a ultima*/
+    display: block;
+    border-top: 10px solid tomato;
+}
+ 
+/* media query para trabalhar a parte responsiva do site*/
+
+@media (max-width: 600px){ /*quando o tamanho for menor que 600px*/
+    .grid1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid1 >div:nth-child(n+4){
+        display: block; /*volta a ter as configurações iniciais do grid1 já que ele bloqueia as configurações da tag atual e volta para o estilo inicial*/
+    }
+    .grid1 > div.anuncio{
+        grid-column: auto;
+        grid-row: auto;
+        order: -1; /* ele volta para a parte inicial, "parte de cima" vai parecer como primeiro8*/
+    }
+}
+
+/*CSS GRID 2 */
+
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto; 
+}
+
+.sidebar > div{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px){
+    .grid2{
+        grid-template-columns: 1fr;
+    }
+    .sidebar{
+        display: flex;
+        overflow: scroll;
+    }
+    .sidebar >div{
+        flex: 1 0 200px; /* ele não diminui menos que 200px*/
+        margin: 0 10px;
+    }
+}
+
+/* GRID 3 */
+
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.grid3-item:nth-child(1){
+    grid-row: 1 / 3; /*ocupar da linha 1 até a linha 3*/
+}
+
+.grid-item{
+    display: grid;
+}
+

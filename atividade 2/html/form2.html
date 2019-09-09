@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../Css/stylefinal.css">
+        <title>Formulário Contato</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="centro">
+            <h1 align="center">INSIRA SEUS DADOS</h1>
+            <h3 align="center">Aguarde e espere o nosso contato!</h3>
+            <form method="POST"> <!--Metodo post esconde os dados do cliente e o GET mostra dados na URL // action serve para add os dados em algum local-->
+                <div class="form">
+                <table>
+                <tr>
+                    <td>Usuário: </td>
+                    <td><input type="text" name="user" class="space" placeholder="Insira o nome de usuário"/></td>
+                </tr>
+                <tr>
+                    <td>Senha:</td>
+                    <td><input type="password" name="password" class="space" placeholder="Insira uma senha"/></td>
+                </tr>
+
+               <tr>
+                   <td>Estado Civil:</td>
+                   <td><select name="estado" class="space" id="num3">
+                        <option value="1">Solteiro(a)</option>
+                        <option value="2">Casado(a)</option>
+                        <option value="3">Divorciado(a)</option>
+                </select></td></tr>
+
+                <tr>
+                    <td>Sexo: </td>
+                    <td><div class="sexo1">
+                        <input type="radio" name="sexo" value="feminino"checked>F
+                        <input type="radio" name="sexo" value="masculino">M</div></td></tr>
+            
+                <tr>
+                    <td>Data de nascimento:</td>
+                    <td><input type="date" class="space"></td></tr>
+                
+                <tr>
+                    <td>Telefone: </td>
+                    <td><input type="text" class="space" id="num" placeholder="(DDD)" /> 
+                        <input type="text" placeholder="Número de telefone" id="num2"/>
+                        </td></tr>
+
+                <tr>
+                    <td>Mensagem:</td>
+                    <td><textarea name="texto" cols="32" rows="6"  placeholder="Escreva uma mensagem"></textarea>
+                    </td></tr>
+                    </table>
+                <div class="baixo">
+                <input type="checkbox" name="termos" class="link">Li e estou de acordo com os <a href="#">termos de uso!</a><br/><BR/>
+                <input type="reset" value="Resetar" class="botao"/>
+                <input type="submit" value="Enviar" class="botao"/>
+            </div>
+            </div>
+            </form>
+            
+            </div>
+        </div>
+    </body>
+</html>

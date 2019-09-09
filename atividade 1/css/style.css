@@ -1,0 +1,93 @@
+body{
+    background-color:white;
+    width: 100%; /*largura*/
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+.menu-principal{
+    width: 100%;
+    background-color: #252323;
+    height: 60px; /*altura*/
+    border: 20px red;
+}
+main{
+    width: 980px;
+    margin: 0 auto; /* fica no inicio da div*/
+    position: relative;
+}
+.logo{
+    float: left;
+    width: 65%; /*o quanto ele vai ocupar dentro de uma div*/
+    padding: 16px; /*distancia da foto a margem*/
+}
+.redes-sociais ul li{
+    margin-left: 25px;
+    display: inline-block; /*alinha a tabela numa linha só*/
+    float: left;
+    list-style: none; /*retira os pontos da tabela*/
+    
+}
+
+.redes-sociais{
+    width:25%;
+    float: right;
+}
+.header-2{
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.menu-urls{
+    border-bottom: 3px solid #efefef;
+    height: 80px;
+}
+ul{
+    padding: 0px !important;
+    color: #8b8b8b;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    color: #252323;
+    margin-left: 15px;
+    height: 50px;
+}
+.menu ul li a{
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.menu ul li:hover{
+    border-bottom: 2px solid #00bac6;
+}
+.menu ul li a:hover{ /*muda a cor do elemento quando o mouse passa em cima*/
+    color:#00bac6;
+   
+}
+.menu{
+    width: 70%;
+    float: left;
+}
+.busca{
+    width:30%;
+    float: right;
+    text-align: center;
+}
+.busca input{
+    background-image: url('../img/buscar.png');
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    height: 36px;
+    padding: 7px;
+    width: 190px;
+    background-position: 96%;
+    border: 1px solid #d6d6d6;
+}
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;
+}
